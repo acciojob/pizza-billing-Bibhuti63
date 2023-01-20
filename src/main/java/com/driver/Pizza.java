@@ -64,13 +64,13 @@ public class Pizza {
     public String getBill(){
         // your code goes here
         
-        // this.bill = ("Base Price Of The Pizza: " + (isVeg?300:400)+
-        //             (flag1?("\nExtra Cheese Added: 80"):" ") +
-        //             (flag2?("\nExtra Toppings Added: "  + (isVeg?70:120)):"") +
-        //             (flag3?("\nPaperbag Added: 20"):"") +
-        //              "\nTotal Price: "+ this.price + "\n"
-        //             );
-        bill+="Total Price: "+price+"\n";
+        this.bill = ("Base Price Of The Pizza: " + (isVeg?300:400)+
+                    (flag1?("\nExtra Cheese Added: 80"):" ") +
+                    (flag2?("\nExtra Toppings Added: "  + (isVeg?70:120)):"") +
+                    (flag3?("\nPaperbag Added: 20"):"") +
+                     "\nTotal Price: "+ this.price + "\n"
+                    );
+        // bill+="Total Price: "+price+"\n";
         return this.bill;
     }
 }
